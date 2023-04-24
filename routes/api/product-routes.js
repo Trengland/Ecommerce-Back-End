@@ -9,14 +9,13 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    where: {
-      id: req.params.id
-    },
-    include: [Category],
-    include: [Tag]
+    // where: {
+    //   id: req.params.id
+    // },
+    include: [Category, Tag]
   })
   .then((products) => res.json(products))
-  .catch((err) => res.status(500).json(err))
+  .catch((err) => {console.log(err); res.status(500).json(err)})
 });
 
 
@@ -36,16 +35,14 @@ router.get('/:id', (req, res) => {
 });
 
 
-// create new product
+
 router.post('/', (req, res) => {
-  
-//   req.body: {
-//       product_name: "Basketball",
-//       price: 200.00,
-//       stock: 3,
-//       tagIds: [1, 2, 3, 4]
-//     }
-// };
+// create new product
+  // Product.createNew(req.body)
+  // .then((newproduct) => res.json(newproduct))
+  // .catch((err) => res.status(400).json(err))
+
+
 
   Product.create(req.body)
     .then((product) => {
@@ -67,7 +64,7 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
-});
+  });
 
 // update product
 router.put('/:id', (req, res) => {

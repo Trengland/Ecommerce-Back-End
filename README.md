@@ -1,105 +1,59 @@
 # Ecommerce-Back-End
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-### Database Models
+## Screen Recording of application walk-through:
 
-Your database should contain the following four models, including the requirements listed for each model:
 
-* `Category`
 
-  * `id`
+## Description
 
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
+This is a mock-up of a back-end database for an eCommerce site. Taking a working Express.js API and using sequelize to configure it to interact with a MySQL database.
 
-  * `category_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
 
-* `Product`
+## Table of Contents
 
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
+* [Installation](#installation)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-  * `product_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
 
-  * `price`
-  
-    * Decimal.
-  
-    * Doesn't allow null values.
-  
-    * Validates that the value is a decimal.
+## Installation
 
-  * `stock`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set a default value of `10`.
-  
-    * Validates that the value is numeric.
+To install necessary dependencies, run the following command: 
 
-  * `category_id`
-  
-    * Integer.
-  
-    * References the `Category` model's `id`.
+```
+necessary dependencies:
+npm install express dotenv
 
-* `Tag`
+To login to your SQL
+mysql -u root -p
+```
 
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
 
-  * `tag_name`
-  
-    * String.
+## License
+    
+This Project is Licensed under the MIT license.
 
-* `ProductTag`
 
-  * `id`
+## Contributing
 
-    * Integer.
+Continuing to add data for the back-end functionality.
 
-    * Doesn't allow null values.
 
-    * Set as primary key.
+## Tests
 
-    * Uses auto increment.
+To perform tests, run the following command:
 
-  * `product_id`
+```
+npm run seed
+npm run start
+```
 
-    * Integer.
 
-    * References the `Product` model's `id`.
+## Questions
 
-  * `tag_id`
+For any questions about this project, contact the author at tiffanyrengland@gmail.com. 
 
-    * Integer.
-
-    * References the `Tag` model's `id`.
+To view more of my work, you can visit my GitHub - [Trengland](https://www.github.com/Trengland/).

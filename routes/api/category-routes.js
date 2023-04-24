@@ -30,25 +30,12 @@ router.get('/:id', (req, res) => {
 });
 
 
-
-
-
-
 router.post('/', (req, res) => {
   // create a new category
-  console.log(req.params)
-  // Category.createNew({
-  //   where: {
-  //     id: req.params.id
-  //   },
-  //   include: [Product]
-  // })
+  Category.create(req.body)
   .then((newcategory) => res.json(newcategory))
   .catch((err) => res.status(400).json(err))
 });
-
-
-
 
 
 router.put('/:id', (req, res) => {
@@ -62,6 +49,7 @@ router.put('/:id', (req, res) => {
   .then((categoryid) => res.json(categoryid))
   .catch((err) => res.status(400).json(err))
 });
+
 
 
 router.delete('/:id', (req, res) => {
