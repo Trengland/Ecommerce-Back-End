@@ -13,9 +13,9 @@ This is a mock-up of a back-end database for an eCommerce site. Taking a working
 ## Table of Contents
 
 * [Installation](#installation)
-* [License](#license)
 * [Contribution](#contribution)
 * [Tests](#tests)
+* [License](#license)
 * [Questions](#questions)
 
 
@@ -27,11 +27,6 @@ To install necessary dependencies, run the following command:
 npm install express dotenv
 
 ```
-
-
-## License
-    
-This Project is Licensed under the MIT license.
 
 
 ## Contribution
@@ -52,6 +47,11 @@ To log in to your own SQL for testing, run the following command (and enter logi
 ```
 mysql -u root -p
 ```
+
+## License
+    
+This Project is Licensed under the MIT license.
+
 
 ## Questions
 
