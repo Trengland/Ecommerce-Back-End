@@ -42,6 +42,7 @@ To perform tests, run the following command:
 ```
 npm run seed
 npm run start
+node server
 ```
 To log in to your own SQL for testing, run the following command (and enter logins):
 
