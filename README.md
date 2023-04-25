@@ -8,7 +8,7 @@
 
 * [Description](#description)
 * [Installation](#installation)
-* [Contribution](#contribution)
+* [Contributors](#contributors)
 * [Tests](#tests)
 * [License](#license)
 * [Questions](#questions)
@@ -29,9 +29,10 @@ npm install express dotenv
 ```
 
 
-## Contribution
+## Contributors
 
 Code debugging through ChatGPT
+
 
 
 ## Tests
