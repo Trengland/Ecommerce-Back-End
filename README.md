@@ -1,8 +1,18 @@
 # Ecommerce-Back-End
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Screen Recording of application walk-through:
+## Screen Recording + Image of application walk-through:
 
+
+
+## Table of Contents
+
+* [Description](#description)
+* [Contributors](#contributors)
+* [Installation](#installation)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 
 ## Description
@@ -10,13 +20,9 @@
 This is a mock-up of a back-end database for an eCommerce site. Taking a working Express.js API and using sequelize to configure it to interact with a MySQL database.
 
 
-## Table of Contents
+## Contributors
 
-* [Installation](#installation)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+Code debugging through ChatGPT
 
 
 ## Installation
@@ -24,22 +30,9 @@ This is a mock-up of a back-end database for an eCommerce site. Taking a working
 To install necessary dependencies, run the following command: 
 
 ```
-necessary dependencies:
 npm install express dotenv
 
-To login to your SQL
-mysql -u root -p
 ```
-
-
-## License
-    
-This Project is Licensed under the MIT license.
-
-
-## Contributing
-
-Continuing to add data for the back-end functionality.
 
 
 ## Tests
@@ -49,7 +42,17 @@ To perform tests, run the following command:
 ```
 npm run seed
 npm run start
+node server
 ```
+To log in to your own SQL for testing, run the following command (and enter logins):
+
+```
+mysql -u root -p
+```
+
+## License
+    
+This Project is Licensed under the MIT license.
 
 
 ## Questions
