@@ -38,27 +38,39 @@ router.post('/', (req, res) => {
 });
 
 
-router.put('/:id', (req, res) => {
+
+router.put('/:id', async (req, res) => {
   // update a category by its `id` value
-  Category.update({
-    where: {
-      id: req.params.id
-    },
-//?
-  })
-  .then((categoryid) => res.json(categoryid))
-  .catch((err) => res.status(400).json(err))
+  try {
+    const updatedCategory = await Category.update(req.body, {
+      where: { id: req.params.id },
+    });
+    if (!updatedCategory[0]) {
+      res.status(404).json({ message: 'No category found with this id :(' });
+      return;
+    }
+    res.status(200).json({ message: 'Category updated succesfully!' });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
-  Category.delete({
-//?
-  })
-  .then((categorydelete) => res.json(categorydelete))
-  .catch((err) => res.status(400).json(err))
+  try {
+    const deletedCategory = await Category.destroy({
+      where: { id: req.params.id },
+    });
+    if (!deletedCategory) {
+      res.status(404).json({ message: 'No Category found with this id!' });
+      return;
+    }
+    res.status(200).json({ message: 'Category deleted successfully!' });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 
