@@ -7,8 +7,8 @@
 ## Table of Contents
 
 * [Description](#description)
-* [Installation](#installation)
 * [Contributors](#contributors)
+* [Installation](#installation)
 * [Tests](#tests)
 * [License](#license)
 * [Questions](#questions)
@@ -19,6 +19,11 @@
 This is a mock-up of a back-end database for an eCommerce site. Taking a working Express.js API and using sequelize to configure it to interact with a MySQL database.
 
 
+## Contributors
+
+Code debugging through ChatGPT
+
+
 ## Installation
 
 To install necessary dependencies, run the following command: 
@@ -27,12 +32,6 @@ To install necessary dependencies, run the following command:
 npm install express dotenv
 
 ```
-
-
-## Contributors
-
-Code debugging through ChatGPT
-
 
 
 ## Tests
