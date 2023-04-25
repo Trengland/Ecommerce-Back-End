@@ -14,7 +14,7 @@ This is a mock-up of a back-end database for an eCommerce site. Taking a working
 
 * [Installation](#installation)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contribution](#contribution)
 * [Tests](#tests)
 * [Questions](#questions)
 
@@ -34,9 +34,9 @@ npm install express dotenv
 This Project is Licensed under the MIT license.
 
 
-## Contributing
+## Contribution
 
-Continuing to add data for the back-end functionality.
+Code debugging through ChatGPT
 
 
 ## Tests
