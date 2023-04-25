@@ -4,19 +4,19 @@
 ## Screen Recording of application walk-through:
 
 
-
-## Description
-
-This is a mock-up of a back-end database for an eCommerce site. Taking a working Express.js API and using sequelize to configure it to interact with a MySQL database.
-
-
 ## Table of Contents
 
+* [Description](#description)
 * [Installation](#installation)
 * [Contribution](#contribution)
 * [Tests](#tests)
 * [License](#license)
 * [Questions](#questions)
+
+
+## Description
+
+This is a mock-up of a back-end database for an eCommerce site. Taking a working Express.js API and using sequelize to configure it to interact with a MySQL database.
 
 
 ## Installation
