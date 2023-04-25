@@ -1,7 +1,8 @@
 # Ecommerce-Back-End
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Screen Recording of application walk-through:
+## Screen Recording + Image of application walk-through:
+
 
 
 ## Table of Contents
