@@ -24,11 +24,8 @@ This is a mock-up of a back-end database for an eCommerce site. Taking a working
 To install necessary dependencies, run the following command: 
 
 ```
-necessary dependencies:
 npm install express dotenv
 
-To login to your SQL
-mysql -u root -p
 ```
 
 
